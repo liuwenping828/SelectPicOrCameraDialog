@@ -1,0 +1,23 @@
+<resources>
+    <!-- 选择相册或打开照相机dialog的style -->
+    <style name="select_pic_dialog" parent="@style/Theme.AppCompat.DayNight.Dialog">
+        <item name="android:windowBackground">@color/dialog_background</item>
+        <item name="android:windowAnimationStyle">@style/dialog_animation</item>
+    </style>
+
+    <style name="dialog_animation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <!-- 选择相册或打开照相机布局中TextView的style -->
+    <style name="select_pic_dialog_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_select_pic_tv_bg</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>
